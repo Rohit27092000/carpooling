@@ -1,0 +1,17 @@
+body
+{
+    background-color: grey;
+}
+.name
+{
+    font-size: xx-small;
+    font-weight: 700;
+    color:  white;
+    text-align: initial;
+    font-style: oblique;
+    height: 78px;
+    padding-top: 19px;
+    background-color: black;
+    border-color: white;
+    background-origin: padding-box;
+}
