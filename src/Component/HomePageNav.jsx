@@ -27,7 +27,7 @@ return (
 		<NavLink to='/AboutUs' activeStyle>
 			<b>About Us</b>
 		</NavLink>
-		<NavLink to='/findcar' activeStyle>
+		<NavLink to='/FindCarLogin' activeStyle>
 			<b>Find a Car</b>
 		</NavLink>
 		<NavLink to='/register' activeStyle>

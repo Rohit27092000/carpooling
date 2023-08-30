@@ -43,7 +43,7 @@ function UserRegister() {
     Register(Data).then((resp) => {
       console.log(resp);
       console.log("success-log");
-
+      window.alert("Successfully Registered");
 
     }).catch((error) => {
       console.log(error);

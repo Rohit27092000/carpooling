@@ -1,5 +1,5 @@
 import React from 'react';
-import MyImage from '../../src/assets/Images/img2.jpeg';
+import MyImage from '../../assets/Images/img2.jpeg';
 import {
 
   MDBContainer,
@@ -11,13 +11,12 @@ import {
 
 }
   from 'mdb-react-ui-kit';
-import HomePageNav from './HomePageNav';
-import './AboutUs.css';
-function AboutUs() {
+import CarOwnerHomePage from './CarOwnerHomePage';
+function AboutUsP() {
 
   return (
     <div>
-      <HomePageNav />
+      < CarOwnerHomePage  />
       <div className='p'>
         <MDBContainer className="my-5">
 
@@ -25,7 +24,7 @@ function AboutUs() {
             <MDBRow className='g-0'>
 
               <MDBCol md='6'>
-                <MDBCardImage src={MyImage}  style={{width:'110%'}}/>
+                <MDBCardImage src={MyImage} style={{width:'110%'}} />
               </MDBCol>
               <MDBCol md='6'>
                 <MDBCardBody className='d-flex flex-column'>
@@ -54,4 +53,4 @@ function AboutUs() {
     </div>
   );
 }
-export default AboutUs;
+export default AboutUsP;

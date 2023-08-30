@@ -8,38 +8,56 @@ import {
 import UserRegister from './Component/User/UserRegister';
 // import HomePageNav from './Component/HomePageNav';
 //import PassengerPage from './Component/User/PassengerPage';
-import UserHomePage from './Component/User/UserHomePage';
-// import PassengerPage from './Component/User/PassengerPage';
+// import PassengerPage from './Component/Passenger/PassengerPage';
 import AboutUs from './Component/AboutUs';
 import Home from './Component/Home';
-import FindCar from './Component/FindCar';
-import UserLogout from './Component/User/UserLogout';
-import ProfilePage from './Component/User/ProfilePage';
-import PassengerPage from './Component/User/PassengerPage';
+import FindCarLogin from './Component/FindCarLogin';
+import FindCar from './Component/Passenger/FindCar';
+import PassengerLogout  from './Component/Passenger/PassengerLogout';
+// import CarOwnerHomePage from './Component/CarOwner/CarOwnerHomePage';
+// import PassengerHomePage from './Component/Passenger/PassengerHomePage';
+import CarRegister from './Component/CarOwner/CarRegister';
+import CarOwnerAccount from './Component/CarOwner/CarOwnerAccount';
+import CarOwnerLogout from './Component/CarOwner/CarOwnerLogout';
+import HomeP from './Component/Passenger/HomeP';
+import AboutUsP from './Component/Passenger/AboutUsP';
+import PassengerDetails from './Component/Passenger/PassengerDetails';
+import HomeC from './Component/CarOwner/HomeC';
+import AboutUsC from './Component/CarOwner/AboutUsC';
+import TripCreate from './Component/Trip/TripCreate';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>,
   },
+  
   {
     path: "/Login",
     element: <Login />,
   },
   {
-    path:"/SignUp",
-    element: <UserHomePage />
+    path:"/LoginAsPassenger",
+    element: <HomeP />,
+  },
+  {
+    path: "/LoginAsCarOwner",
+    element: <HomeC />
   },
   {
     path: "/Register",
     element: <UserRegister />,
   },
   {
-    path: '/ProfilePage',
-    element: <ProfilePage />
+    path: '/PassengerDetails',
+    element: <PassengerDetails />,
   },
   {
-    path: '/Logout',
-    element: < UserLogout/>
+    path: '/PassengerLogout',
+    element: <PassengerLogout />
+  },
+  {
+    path: '/CarOwnerLogout',
+    element: <CarOwnerLogout />
   },
   {
     path: '/AboutUs',
@@ -51,11 +69,43 @@ const router = createBrowserRouter([
   },
   {
     path: '/FindCar',
-    element: <FindCar/>
+    element: <FindCar />
   },
   {
-    path:'/Edituser',
-    element: <PassengerPage />
+    path: '/FindCarLogin',
+    element :<FindCarLogin />
+  },
+  {
+    path: '/CarRegister',
+    element: <CarRegister />,
+  },
+  {
+    path: '/CarOwnerAccount',
+    element: <CarOwnerAccount />,
+  },
+  {
+    path: '/HomeP',
+    element: <HomeP />
+  },
+  {
+    path: '/HomeC',
+    element: <HomeC />
+  },
+  {
+    path :'/AboutUsP',
+    element : <AboutUsP />
+  },
+  {
+    path: '/HomeP',
+    element :<HomeC/>
+  },
+  {
+    path: '/AboutUsC',
+    element : <AboutUsC />
+  },
+  {
+    path: '/CreateTrip',
+    element : <TripCreate />
   }
 ]);
 function App() {

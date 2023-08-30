@@ -15,8 +15,3 @@ export const Passenger =(Passenger)=>
 {
     return myAxios.post('/Passenger/addPassengers',Passenger).then((response)=>response.data)
 }
-
-export const Updateuser = (user) =>
-{
-    return myAxios.put('/User/UpdateUser',user).then((response)=>response.data)
-}

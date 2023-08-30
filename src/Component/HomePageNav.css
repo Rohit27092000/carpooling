@@ -10,8 +10,8 @@ body
     text-align: initial;
     font-style: oblique;
     height: 78px;
-    padding-top: 19px;
-    background-color: black;
+    padding-top: 10px;
+    background-color: lightblue;
     border-color: white;
     background-origin: padding-box;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import MyImage from '../../src/assets/Images/img1.jpeg';
+import MyImage from '../../assets/Images/img1.jpeg';
 import {
 
   MDBContainer,
@@ -11,26 +11,25 @@ import {
 
 }
   from 'mdb-react-ui-kit';
-import HomePageNav from './HomePageNav';
-import './AboutUs.css';
-function Home() {
+import CarOwnerHomePage from './CarOwnerHomePage';
+function HomeP() {
 
   return (
     <div>
-      <HomePageNav />
+      <CarOwnerHomePage />
       <div className='p'>
         <MDBContainer className="my-5">
 
           <MDBCard>
             <MDBRow className='g-0'>
-
               <MDBCol md='6'>
-                <MDBCardImage src={MyImage} style={{ width: '70%' }} />
+                <MDBCardImage src={MyImage} style={{width: '70%'}} />
               </MDBCol>
 
               <MDBCol md='6'>
                 <MDBCardBody className='d-flex flex-column'>
-                  <br />
+                  <br></br>
+                  <br></br>
                   <div className='para'>
                     <span><b>Welcome to CarPool Connect :</b></span>
                     Discover a smarter way to commute. Join our community of carpoolers
@@ -46,10 +45,10 @@ function Home() {
                     with people in your community. Build friendships while you commute.<br />
                     <span><b>Efficient and Convenient Travel: </b></span>
                     Say goodbye to solo commuting. Our carpooling platform makes it easy to find rides,
-                    connect with fellow travelers, and enjoy a more relaxed journey.<br/>
+                    connect with fellow travelers, and enjoy a more relaxed journey.<br />
                     <span><b>Drive Together, Arrive Together: </b></span>
-                      Experience hassle-free commuting. Share rides, reduce stress,
-                      and arrive at your destination relaxed and ready to go.
+                    Experience hassle-free commuting. Share rides, reduce stress,
+                    and arrive at your destination relaxed and ready to go.
                   </div>
                 </MDBCardBody>
               </MDBCol>
@@ -61,4 +60,4 @@ function Home() {
     </div>
   );
 }
-export default Home;
+export default HomeP;
