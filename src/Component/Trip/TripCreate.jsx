@@ -130,6 +130,7 @@ const Createtrip = (event) => {
                         <div>
                           <h2>Select Car:</h2>
                            <select label='Car' onChange={e=>setCarId(e.target.value)}>
+                             <option>Select Car</option>
                             {(carList).map((car)=>(
                            <option value={car.car_Id} >{car.company} {car.model}</option>
                            ))}
@@ -138,6 +139,7 @@ const Createtrip = (event) => {
                             <div>
                             <h2>Select a Source City:</h2>
                            <select label='Source City' onChange={e=>setSourceCityId(e.target.value)}>
+                            <option>Select City</option>
                             {(cityList).map((val)=>(
                            <option value={val.city_Id} >{val.cityName}</option>
                            ))}
@@ -146,6 +148,7 @@ const Createtrip = (event) => {
                           <div>
                           <h2>Select a Destination City:</h2>
                            <select label='Destination City' onChange={e=>setDestinationCityId(e.target.value)}>
+                            <option>Select City</option>
                             {(cityList).map((val)=>(
                            <option value={val.city_Id} >{val.cityName}</option>
                            ))}
@@ -153,7 +156,7 @@ const Createtrip = (event) => {
                           </div>
                           <MDBInput wrapperClass='mb-4' label='seats Available' id='seat_available' type='text' size="lg" onChange={(e)=>handleChange(e,'seats_offer')}  />
                           <MDBInput wrapperClass='mb-4' label='total cost' id='total_cost' type='text' size="lg" onChange={(e)=>handleChange(e,'total_cost')}  />
-                          <MDBInput wrapperClass='mb-4' label='tripDate' id='tripDate' type='text' size="lg" onChange={(e)=>handleChange(e,'tripDate')} placeholder='yyyy-mm-dd'  />
+                          <MDBInput wrapperClass='mb-4' label='tripDate' id='tripDate' type='date' size="lg" onChange={(e)=>handleChange(e,'tripDate')} placeholder='yyyy-mm-dd'  />
                           
                       </b>
                     </h3>
