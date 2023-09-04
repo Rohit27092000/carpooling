@@ -81,7 +81,7 @@ function CarRegister()
                     type='text'
                     size='lg'
                     placeholder='Enter Car Number'
-                    onChange={(e) => handleChange(e, 'car_no')}
+                    onChange={(e) => handleChange(e, 'carNo')}
                   />
                   <MDBInput
                     wrapperClass='mb-4'
